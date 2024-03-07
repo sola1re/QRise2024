@@ -1,0 +1,15 @@
+Method:
+  - VQE w/ classical optimiser 
+  - Mean Squared Error (MSE) finally used to compute the error rate
+    - Phase estimator φ(m)=am from raw measurment. The estimator function is paramount
+      - analytic inverting function using an arcsine estimator not optimal because decoherence spreads
+      - Minimum Bayesian mean squared error (MBMSE) is slightly better but more computationally expensive than MSE
+    - Cost function with a Bayes estimator (BMSE)
+  - on-device self-calibration
+    - Dividing Rectangles algorithm (DIRECT)
+
+
+Applications:
+- 5.29 dB below the standard quantum limit 26Qbits
+- More robust
+  
